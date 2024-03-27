@@ -1,0 +1,35 @@
+<!--
+    Em regra, toda tem um estilo padrão. Salvo algumas exceções, por exemplo <span> que não tem nenhum estilo
+
+    E o estilo pode ser alterado, acrescentando ou modificando seus valores iniciais
+    
+    Para fazer isso, temos 3 formas:
+     Prioridade 1) INLINE: dentro da tag pelo atributo STYLE
+     Prioridade 2) TAG STYLE: dentro do arquivo pelo tag STYLE
+     Prioridade 3) Link: fora do arquivo HTML linkando a arquivo CSS
+    
+     Com um pequeno grandioso detalhe, pode-se utilizar !important após para alterar ordem de prioridade
+
+     Pode utilizar o ID e CLASS para aplicar estilo a um conjunto de elementos ou a um elemento especifico independente da tag 
+-->
+
+<!--
+    Seletores do CSS: São as formas para selecionar um elemento na página para aplicar o estilo. Por padrão, aplicamos a uma TAG, só podemos também aplicar a eventos de TAGS, propriedades ou valores de propriedades de TAGS
+-->
+
+<style>
+  #txt1 {
+    color: pink;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: double red 10px;
+    border-top: dotted green 15px;
+  }
+  #corazon {
+    text-align: center;
+    color: red;
+    font-size: 40px;
+  }
+</style>
+<p id="txt1">Larinha and Paulinha</p>
+<p id="corazon">♥</p>

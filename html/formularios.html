@@ -1,0 +1,56 @@
+<!--
+    Atributos do Form:
+      
+     1) action: será o local para onde os dados são enviados e deverão ser tratados. Caso não coloque, irão para a própria página
+     2) method: GET e POST
+          GET que é o padrão, segue pelo URL
+          POST segue pelo header/body da messagem
+     3)enctype:
+        text-plain >> vai só texto
+        multipart/form-data
+-->
+<style>
+  label {
+    display: block;
+  }
+  input,
+  button {
+    width: 100%;
+  }
+</style>
+<form method="GET" action="dados.html">
+  <label>Nome</label>
+  <input type="text" name="nome" />
+
+  <label>Data Aplicação Prova</label>
+  <input type="date" name="data" />
+
+  <label> Nota</label>
+  <input type="number" min="1" max="10" name="nota" />
+
+  <label>Cor Predileta</label>
+  <input type="color" name="corBoletim" />
+
+  <label>Sexc</label>
+  <span>M</span>
+  <input type="radio" name="sexo" value="m" />
+  <span>F</span>
+  <input type="radio" name="sexo" value="f" />
+  <span>Não Informado</span>
+  <input type="radio" name="sexo" value="n" checked />
+  <label>Faça seu prato</label>
+  <span>Feijão</span>
+  <input type="checkbox" name="prato" value="fei" />
+  <span>Arroz</span>
+  <input checked type="checkbox" name="prato" value="arr" />
+  <span>Mistura</span>
+  <input type="checkbox" name="prato" value="mist" />
+  <span>Verdura</span>
+  <input type="checkbox" name="prato" value="verd" />
+  <select name="estado">
+    <option value="pe">Pernambuco</option>
+    <option value="ba">Bahia</option>
+    <option value="rn">Rio Grande do Norte</option>
+  </select>
+  <button>Enviar</button>
+</form>
